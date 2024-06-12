@@ -10,7 +10,7 @@ The game is played via the terminal/command line. Navigate in the command line t
 
 #### 2. Using a Different Map
 
-Upon starting the game, the user is promoted to enter a map. The map text files should be placed in the src folder with the code files.  Map file names should be of the form 'name.txt' and to find the map you only need to write 'name' into the console when asked for the map name.
+Upon starting the game, the user is promoted to enter a map. The map text files should be placed in the root project folder.  Map file names should be of the form 'name.txt' and to find the map you only need to write 'name' into the console when asked for the map name.
 
 Note that after three failed attempts to search for a suitable map file, a default map is used for the game, and the user plays using this map. 
 
