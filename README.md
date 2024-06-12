@@ -35,23 +35,3 @@ On the map (as seen through the LOOK command): <br>
 **'G'** - refers to gold, which can be picked up by the player
 **'E'** - refers to an exit tile
 **'#'** - refers to a wall. The player cannot move through a wall.
-
-
-## Developer/Marker Notes
-
-The code has been written in Java, making use of IntelliJ. The project contains 5 classes:
-
-### 1. GameLogic 
-This class contains the main method from which the game is run. Within GameLogic, we create a Map, a BotPlayer and a HumanPlayer. We also keep track of whether the game is running or not, and whose turn it is (the bot or the player). In GameLogic, we add the players to the map, through addPlayerToMap(), and perform the actions each player specifies by calling methods such as hello(), gold(), move(). 
-
-### 2. Map
-The map class holds the current state of the map. This includes the map stored as a 2D char array, the name of the map, the gold required to be collected on the map to win the game, and the amount of rows/columns of the map, which are used in representing the map as a 2D array. Within this class, we deal with reading in the map from a file and, if this is not possible, providing a default map. We also use this class to update the position of the player/bot on the map as well as the position of items on the map.
-
-### 3. Player
-This is an abstract class, and is inherited by both BotPlayer and HumanPlayer, and contains the essential fields and behaviours of player classes. This class contains the necessary fields a player needs: the commands available to the player, the command they want to execute, their row/column position on the map (in order to move the player when they execute a move command) and the item they are standing on. Suitable accessor and mutator methods are provided for these fields. Two abstract methods are created in Player: generateCommand() and getNextAction(). These methods are abstract as how each player generates a command and how each command is processed is different depending on the player type.
-
-### 4. HumanPlayer
-HumanPlayer represents the class for the user. Two more fields are created on top of the fields provided by Player: the amount of gold the player owns and a BufferedReader Object. Within generateCommand() we gather the command the user wants to execute through asking for input in the console. This input is then processed in getNextAction(), where we look to see if the command entered by the user corresponds to any of the commands available to them. If it does, we can return the command the user wants to execute to GameLogic.
-
-### 5. BotPlayer
-BotPlayer - BotPlayer represents the computer controlled player. Within generateCommand(), a command is generated based on how many moves the bot has made, and whether the bot has seen the player through the look command. Every two directions the bot moves in, generateCommand returns the LOOK command. The boy player then stores information about the map that it can gather through this command - such as the position of the player relative to the bot. If the player can not be seen, the next two moves of the bot will be to move in a random direction, as such generateCommand() returns either MOVE N, MOVE S, MOVE E or MOVE W. If the bot sees the player, it decides which direction to move in depending on which direction will bring it closest to the player (this is decided through a separate method called getDirectionToMoveIn, which is called in generateCommand() on moves when the bot is not using the LOOK command.) In getNextAction(), we simply return the command specified by the bot from generateCommand() to GameLogic. 
