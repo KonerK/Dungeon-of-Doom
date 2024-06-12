@@ -2,6 +2,8 @@
 
 This project was created as the second coursework for CM10227, Dungeons of Doom. The terminal-based game begins with the player spawned on a rectangualr grid (the map). This map contains gold tiles, exit tiles, empty tiles, and walls. The goal of the game is for the player to move around the grid to collect the gold, then find their way to an exit tile in order to leave the dungeon and win the game. 
 
+![DoDClip](https://github.com/KonerK/Dungeons-of-Doom/assets/66024237/9682a201-16ac-4f62-bb20-fcd1c5e53984)
+
 ## User Actions & Notes
 
 #### 1. Configuration Instructions
@@ -35,3 +37,10 @@ On the map (as seen through the LOOK command): <br>
 **'G'** - refers to gold, which can be picked up by the player
 **'E'** - refers to an exit tile
 **'#'** - refers to a wall. The player cannot move through a wall.
+
+
+
+
+
+
+
