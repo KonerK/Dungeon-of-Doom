@@ -1,14 +1,18 @@
-# Dungeon of Doom
+# Dungeon of Doom, Terminal Game
 
-This project was created as the second coursework for CM10227 (Principles of Programming), Dungeons of Doom. The terminal-based game begins with the player spawned on a rectangualr grid (the map). This map contains gold tiles, exit tiles, empty tiles, and walls. The goal of the game is for the player to move around the grid to collect the gold, then find their way to an exit tile in order to leave the dungeon and win the game. 
+## The Project
+
+Dungeon of Doom is a terminal game created as coursework for a first-year module (CM10227, Principles of Programming) at the University of Bath. 
+
+The game begins with the player spawned on a rectangular grid, which contains different letters corresponding to different objects that the player can interact with, including gold (represented by the letter G). Various commands will allow the user to look at and move around the map. The goal of the game is for the player to move around the grid to collect the gold, then find their way to an exit tile in order to leave the dungeon and win the game.
 
 ![DoDClip](https://github.com/KonerK/Dungeons-of-Doom/assets/66024237/9682a201-16ac-4f62-bb20-fcd1c5e53984)
 
-## User Actions & Notes
+## Getting Started
+The game is played via the command line (terminal). Aftering downloading this project to a directory of your choosing, navigate to the src folder within the terminal. Then, compile the java files using 'javac *.java'. Finally, you can type 'java GameLogic' within the terminal to begin the game. 
 
-#### 1. Configuration Instructions
+###
 
-The game is played via the terminal/command line. Navigate in the command line to where the source code is contained (e.g. in the src folder), and compile the java files using 'javac *.java'. Then, in order to play the game, enter 'java GameLogic' and the game will begin.
 
 #### 2. Using a Different Map
 
