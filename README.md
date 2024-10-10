@@ -48,6 +48,8 @@ If creating your own map, ensure the map is within a .txt file with the followin
 **Remaining Lines of .txt File**: A rectangular nxm grid encompassed by # tiles. <br>
 
 The following examples should give a good idea of the format. Enjoy!
+<br>
+<br>
 ![Maps](https://github.com/user-attachments/assets/9fea43f7-fb81-4ac7-8cd8-a2beacb50a96)
 
 
