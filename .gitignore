@@ -1,3 +1,6 @@
+#VS Code Files
+.vscode
+
 # MacOS specific .DS_Store file
 .DS_Store
 
