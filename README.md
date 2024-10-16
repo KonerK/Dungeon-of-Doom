@@ -4,7 +4,7 @@
 
 Dungeon of Doom is a terminal game created as coursework for a module (CM10227, Principles of Programming) studied by first-year undergraduates studying Computer Science at the University of Bath, which received a mark of 95%. 
 
-The game begins with the player spawned on a rectangular grid, which contains different letters corresponding to different objects that the player can interact with, including gold (represented by the letter G). Various commands will allow the user to look at and move around the map. The goal of the game is for the player to move around the grid to collect the gold while avoiding bot. After all gold has been collected, the player must find their way to an exit tile in order to leave the dungeon and win the game.
+The game begins with the player spawned on a rectangular grid, which contains different letters corresponding to different objects that the player can interact with, such as gold (represented by the letter G). Various commands will allow the user to look at and move around the map. The goal of the game is for the player to move around the grid to collect the gold while avoiding bot. After all gold has been collected, the player must find their way to an exit tile in order to leave the dungeon and win the game.
 
 ![DoDClip](https://github.com/KonerK/Dungeons-of-Doom/assets/66024237/9682a201-16ac-4f62-bb20-fcd1c5e53984)
 
