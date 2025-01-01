@@ -1,6 +1,4 @@
-# Dungeon of Doom, Terminal Game
-
-## The Project
+# Dungeon of Doom
 
 Dungeon of Doom is a terminal game created as coursework for a module (CM10227, Principles of Programming) studied by first-year undergraduates studying Computer Science at the University of Bath, which received a mark of 95%. 
 
